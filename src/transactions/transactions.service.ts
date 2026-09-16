@@ -57,7 +57,7 @@ export class TransactionsService {
         await transacctionEntityManager.save(transactionContent);
       }
     });
-    return "Venta realizada exitosamente";
+    return {message: "Venta realizada exitosamente"};
 
     
   }
