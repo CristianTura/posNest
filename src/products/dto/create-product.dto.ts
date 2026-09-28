@@ -4,7 +4,10 @@ export class CreateProductDto {
     @IsNotEmpty({message: 'El nombre es requerido'})
     @IsString({message: 'El nombre no es válido'})
     name: string;
-    // image: string;
+
+    @IsNotEmpty({message: 'La imagen es requerida'})
+    image: string;
+
     @IsNotEmpty({message: 'El precio es requerido'})
     @IsNumber({maxDecimalPlaces: 2}, {message: 'El precio no es válido'})
     price: number;
