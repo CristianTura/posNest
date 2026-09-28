@@ -11,7 +11,7 @@ async function bootstrap() {
   }));
    app.enableCors({
     origin: [
-      'https://pos-next-6u3yllnap-cristianturas-projects.vercel.app'
+      'https://pos-next-js-pi.vercel.app'
     ],
     credentials: true
   });
