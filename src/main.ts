@@ -9,6 +9,12 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true
   }));
+   app.enableCors({
+    origin: [
+      'https://pos-next-6u3yllnap-cristianturas-projects.vercel.app'
+    ],
+    credentials: true
+  });
   app.useStaticAssets(join(__dirname, '../public'));
   await app.listen(process.env.PORT ?? 4000);
 }
